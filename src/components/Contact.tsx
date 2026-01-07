@@ -26,7 +26,10 @@ export const Contact = () => {
                 Swal.fire({
                     title: "Message sent!",
                     icon: "success",
-                    draggable: true
+                    draggable: true,
+                    background: "#020617",
+                    color: "#ffffff",
+                    confirmButtonColor: "#06b6d4",
                 });
                 form.reset();
             }
@@ -34,7 +37,10 @@ export const Contact = () => {
             Swal.fire({
                 title: "Failed to send!",
                 text: "Please try again later.",
-                icon: "error"
+                icon: "error",
+                background: "#020617",
+                color: "#ffffff",
+                confirmButtonColor: "#06b6d4",
             });
         } finally {
             setIsSending(false);
@@ -69,10 +75,20 @@ export const Contact = () => {
                         </div>
 
                         <div className="flex gap-4 pt-4">
-                            <a href={portfolioData.personalInfo.github} className="p-2 bg-slate-900 rounded-full hover:bg-slate-800 hover:text-cyan-400 transition-colors">
+                            <a
+                                href={portfolioData.personalInfo.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2 bg-slate-900 rounded-full hover:bg-slate-800 hover:text-cyan-400 transition-colors"
+                            >
                                 <Github className="w-6 h-6" />
                             </a>
-                            <a href={portfolioData.personalInfo.linkedin} className="p-2 bg-slate-900 rounded-full hover:bg-slate-800 hover:text-cyan-400 transition-colors">
+                            <a
+                                href={portfolioData.personalInfo.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2 bg-slate-900 rounded-full hover:bg-slate-800 hover:text-cyan-400 transition-colors"
+                            >
                                 <Linkedin className="w-6 h-6" />
                             </a>
                         </div>
