@@ -11,6 +11,9 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Sanjida Khanam | Frontend Developer",
   description: "Portfolio of Sanjida Khanam, a passionate Frontend Developer.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
