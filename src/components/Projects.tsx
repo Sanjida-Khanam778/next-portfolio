@@ -5,7 +5,7 @@ import { portfolioData } from "@/data/portfolio";
 import { ExternalLink, Github, Folder } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
+  
 export const Projects = () => {
     return (
         <section id="projects" className="py-20">
