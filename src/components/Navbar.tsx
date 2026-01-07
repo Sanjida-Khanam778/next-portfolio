@@ -37,7 +37,7 @@ export const Navbar = () => {
             transition={{ duration: 0.35, ease: "easeInOut" }}
             className="fixed w-full z-50 top-0 start-0 border-b border-slate-800/50 bg-slate-950/80 backdrop-blur-md"
         >
-            <div className="container flex flex-wrap items-center justify-between mx-auto p-4">
+            <div className="container flex flex-wrap items-center justify-between mx-auto p-2 md:p-4">
                 <div className="flex items-center">
                     <img src="/favicon.png" className="h-12 lg:h-20" alt="" />
                     {/* <a className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-400 md:text-3xl font-bold uppercase">
